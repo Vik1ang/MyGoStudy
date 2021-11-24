@@ -1,8 +1,8 @@
 package main
 
 import (
-	"GoBasicStudy/src/study01/dog"
-	"GoBasicStudy/src/study01/testPackage"
+	"GoBasicStudy/src/01-variable/dog"
+	"GoBasicStudy/src/01-variable/testPackage"
 	"fmt"
 )
 
