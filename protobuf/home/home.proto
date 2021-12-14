@@ -1,0 +1,9 @@
+syntax = "proto3"; // 告诉编译器 用 proto3 来解读
+
+package home;
+
+option go_package = "MyGoStudy/protobuf/home;home";
+
+message  Home {
+  string home_number = 1;
+}

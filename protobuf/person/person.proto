@@ -1,0 +1,23 @@
+syntax = "proto3"; // 告诉编译器 用 proto3 来解读
+
+package person;
+
+option go_package = "MyGoStudy/protobuf/person;person";
+
+message Home {
+  repeated Person persons = 1;
+  message Visitor {
+    string name = 1;
+  }
+  Visitor v = 2;
+}
+
+message Person {
+  string name = 1;
+  int32 age = 2;
+  bool sex = 3;
+  repeated string test = 4;
+  map <string, string> test_map = 5;
+
+}
+

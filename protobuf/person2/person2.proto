@@ -1,0 +1,27 @@
+syntax = "proto3"; // 告诉编译器 用 proto3 来解读
+
+package person2;
+
+option go_package = "MyGoStudy/protobuf/person2;person2";
+
+import "home/home.proto";
+
+message Person {
+  string name = 1;
+  int32 age = 2;
+
+  enum Sex {
+    option allow_alias = true;
+    male = 0;
+    female = 1;
+    baby = 3;
+    other = 3;
+  }
+
+  Sex sex = 3;
+
+  home.Home i_home = 9;
+
+  reserved "test_map";
+  reserved 6;
+}
